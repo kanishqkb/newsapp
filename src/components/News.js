@@ -71,6 +71,7 @@ export class News extends Component {
              <h2 className="text-center" style={{margin:'35px 0px'}} >Ki2News-Top {this.capitalizeFirstLetter(this.props.category)} Headlines</h2>
              <hr className="container" />
              {this.state.loading && <Spinner/>}
+             {console.log(this.state.articles)}
             <InfiniteScroll
           dataLength={this.state.articles.length}
           next={this.fetchMoreData}
